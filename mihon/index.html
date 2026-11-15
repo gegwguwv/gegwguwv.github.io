@@ -2,7 +2,7 @@
 <html lang="ja"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
-<title>ゴールドFXの無料勉強会｜お助けツール無料プレゼント</title>
+<title>ゴールドFXの勉強会｜ローソク足と入り所を毎日いっしょに</title>
 <style>
 *{box-sizing:border-box}
 body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#fffaf0;color:#1f2937;line-height:1.8;padding-bottom:96px}
@@ -61,98 +61,45 @@ svg{width:100%;height:auto;display:block}
 .pk{font-size:15px;font-weight:800;color:#52525b}.pv{font-size:56px;font-weight:900;color:#16a34a;line-height:1.1}.pv small{font-size:24px}
 .ps{font-size:14px;color:#3f3f46;font-weight:700}.ps span{color:#b45309}
 
-/* ===== 派手版（パチンコ風）2026-11-14 ===== */
-body{background:#1a0000 radial-gradient(circle at 50% 0,#7a0000 0,#2a0000 45%,#120000 100%) fixed;color:#fff}
-.hero{position:relative;overflow:hidden;background:#200000;border-radius:0 0 28px 28px;padding:26px 18px 28px}
-.hero:before{content:"";position:absolute;inset:-60%;background:repeating-conic-gradient(from 0deg,rgba(255,215,0,.22) 0 10deg,transparent 10deg 20deg);animation:spin 18s linear infinite}
-.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 35%,rgba(255,60,0,.35),rgba(32,0,0,.92) 70%)}
-.hero>*{position:relative;z-index:1}
-@keyframes spin{to{transform:rotate(360deg)}}
-.ribbon{background:linear-gradient(90deg,#ff0040,#ff9a00,#ff0040);background-size:200% 100%;animation:flow 2s linear infinite;font-size:16px;box-shadow:0 0 14px #ff3d00}
-@keyframes flow{to{background-position:200% 0}}
-.atari{margin:14px auto 0;font-size:30px;font-weight:900;letter-spacing:.06em;color:#fff200;text-shadow:0 0 6px #ff0,0 0 18px #ff6a00,0 3px 0 #b30000;animation:blink .9s steps(2,start) infinite}
-@keyframes blink{50%{opacity:.35}}
-.proof{border:5px solid transparent;border-radius:22px;margin:12px 0 16px;padding:16px 10px;background:linear-gradient(#160000,#160000) padding-box,linear-gradient(90deg,red,orange,yellow,lime,cyan,blue,magenta,red) border-box;background-size:100% 100%,300% 100%;animation:flow2 3s linear infinite;box-shadow:0 0 24px rgba(255,200,0,.55)}
-@keyframes flow2{to{background-position:0 0,300% 0}}
-.pk{color:#ffd76a;font-size:15px}
-.pv{font-size:64px;background:linear-gradient(180deg,#fffbe0 0,#ffd700 45%,#ff9500 60%,#fff2a8 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 10px rgba(255,200,0,.8));line-height:1.1}
-.pv small{font-size:26px;-webkit-text-fill-color:#ffd700}
-.ps{color:#fff}.ps span{color:#ffef5a}
-.hero h1{color:#fff;text-shadow:0 2px 0 #900,0 0 12px rgba(255,80,0,.8)}
-.hero h1 b{color:#ffe14d}
-.hero p{color:#ffe9c7;font-weight:700}
-.free{color:#ffd9b0}
-.btn{background:linear-gradient(180deg,#ff3b3b,#d10000);box-shadow:0 6px 0 #7a0000,0 0 20px rgba(255,0,0,.6);border:3px solid #ffd700;animation:pulse 1.1s ease-in-out infinite;text-shadow:0 2px 0 #7a0000}
-@keyframes pulse{50%{transform:scale(1.05);box-shadow:0 6px 0 #7a0000,0 0 34px rgba(255,215,0,.9)}}
-.spark{position:absolute;color:#fff6a0;font-size:22px;animation:tw 1.6s ease-in-out infinite;z-index:2;pointer-events:none;text-shadow:0 0 8px #ffd700}
-@keyframes tw{0%,100%{opacity:0;transform:scale(.4) rotate(0)}50%{opacity:1;transform:scale(1.2) rotate(90deg)}}
-h2{color:#fff}
-h2 span{display:inline-block;background:linear-gradient(180deg,#fff3a0,#ffc400 55%,#e08a00);color:#5a0000;padding:6px 18px;border-radius:12px;border:3px solid #fff;box-shadow:0 0 16px rgba(255,200,0,.7);font-size:22px}
-.card,.pain,.step,.qa,.num,.box,.vc{color:#1f2937}
-.card,.pain,.step,.qa{border-left:6px solid #ffc400}
-.pain{border-left-color:#ff2d2d}
-.arrow{color:#ffd700;text-shadow:0 0 10px #ff0;animation:blink .9s steps(2,start) infinite}
-.sub,.cap{color:#ffe9c7;font-weight:700}
-.hl{color:#39ff7a;text-shadow:0 0 12px rgba(57,255,122,.7);font-size:46px}.hl small{color:#fff}
-.lead2{color:#fff}.lead2 span{color:#ffd9b0}
-.fine{color:#f3c9b5}
-.foot{color:#d6a99a}
-.again{background:#200000;border:4px solid #ffd700;box-shadow:0 0 26px rgba(255,200,0,.6)}
-.again b{color:#ffe14d}
-.shot{border:3px solid #ffd700;box-shadow:0 0 18px rgba(255,200,0,.45)}
-.step .n{background:linear-gradient(180deg,#ff3b3b,#c00000);color:#fff;border:2px solid #ffd700}
-.sticky{background:rgba(30,0,0,.94);box-shadow:0 -4px 18px rgba(255,120,0,.4)}
-.pop{opacity:0;transform:translateY(40px) scale(.92)}
-.pop.on{opacity:1;transform:none;transition:all .6s cubic-bezier(.2,1.6,.4,1)}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.pop{opacity:1;transform:none}}
 </style></head><body><div class="w">
 
-<div class="hero"><span class="spark" style="left:6%;top:8%;animation-delay:0s">✦</span><span class="spark" style="left:88%;top:12%;animation-delay:0.5s">✦</span><span class="spark" style="left:12%;top:40%;animation-delay:1s">✦</span><span class="spark" style="left:84%;top:46%;animation-delay:0.3s">✦</span><span class="spark" style="left:4%;top:72%;animation-delay:0.8s">✦</span><span class="spark" style="left:92%;top:80%;animation-delay:1.2s">✦</span><span class="spark" style="left:50%;top:3%;animation-delay:0.6s">✦</span>
-<div class="ribbon">FX・ゴールド（金）の無料勉強会</div>
-<div class="atari">🎰 6か月連続プラス 🎰</div>
-<div class="proof"><div class="pk">ツールの半年の成績（過去の検証）</div><div class="pv">+<span class="cnt" data-to="1188">1,188</span><small>万円</small></div><div class="ps">資金500万円・6か月すべてプラス・損切り0回<br><span>実際の配信も今週 +<span class="cnt" data-to="101861">101,861</span>円</span></div></div>
-<h1>ゴールドのFXが<br>はじめてでも<br><b>お助けツール「SCHOLAR」</b>を<br>無料プレゼント</h1>
-<p>FXでゴールド（金）を売り買いする<br>毎日の入り所がわかる勉強会に<br>無料で参加するだけ</p>
-<a class="btn" href="https://t.me/+6vZnVeQlpvBiNWRh" rel="noopener">無料で受け取る ▶</a>
-<div class="free">参加も退出も自由・お金はかかりません</div>
+<div class="hero">
+<div class="ribbon">FX・ゴールド（金）の勉強会</div>
+<h1 style="margin-top:18px">ゴールドの<br><b>入り所の考え方</b>を<br>毎日いっしょに学ぶ</h1>
+<p>平日の日中、その日の入り所と<br>「なぜそこなのか」をチャットで共有。<br>見るだけの参加でも大丈夫です。</p>
+<a class="btn" href="https://t.me/+6vZnVeQlpvBiNWRh" rel="noopener">勉強会をのぞいてみる ▶</a>
+<div class="free">参加は無料・退出はいつでも自由です</div>
 </div>
 
 <div class="sec">
-<h2><span>FXで、こんな悩みありませんか？</span></h2>
+<h2><span>こんな悩みはありませんか？</span></h2>
 <div class="pain">ゴールドをどこで買う・売るか分からない</div>
-<div class="pain">損切りが怖くて、手が止まる</div>
+<div class="pain">ローソク足の形を見ても、意味が分からない</div>
 <div class="pain">ひとりだと続かない</div>
 <div class="arrow">▼</div>
 </div>
 
 <div class="sec">
-<h2><span>ゴールドFX勉強会なら、ぜんぶ解決</span></h2>
-<div class="card"><div class="i">📈</div><div><b>ゴールドの入り所を毎日お知らせ</b><p>平日13〜22時に「ここで買う・売る」を共有</p></div></div>
-<div class="card"><div class="i">🤖</div><div><b>入ったあとはツールにおまかせ</b><p>利確・損切りをツールが受け持つ</p></div></div>
-<div class="card"><div class="i">👥</div><div><b>仲間と一緒だから続く</b><p>雑談部屋で結果を報告し合える</p></div></div>
+<h2><span>勉強会でできること</span></h2>
+<div class="card"><div class="i">📈</div><div><b>その日の入り所を共有</b><p>平日13〜22時ごろ、「ここで買う・売る」と理由をお知らせ</p></div></div>
+<div class="card"><div class="i">🕯️</div><div><b>ローソク足の見方が身につく</b><p>実際のチャートで、形の意味と次の動きの読み方を確認</p></div></div>
+<div class="card"><div class="i">🛠️</div><div><b>お助けツール「SCHOLAR」</b><p>利確・損切りの位置をあらかじめ決めて、感情で迷わない練習に</p></div></div>
+<div class="card"><div class="i">👥</div><div><b>仲間と一緒だから続く</b><p>雑談部屋で、その日の振り返りを話せます</p></div></div>
 </div>
 
 <div class="sec">
-<h2><span>実際のエントリー</span></h2>
-<p class="sub">配信の画面そのままです</p>
-<img class="shot" src="../img/entry.jpg" alt="実際のエントリーの画面">
-<p class="cap">「ショートいきます！」の合図で入って、利確 ✨</p>
+<h2><span>実際のお知らせ</span></h2>
+<p class="sub">勉強会のチャットの画面です</p>
+<img class="shot" src="../img/entry.jpg" alt="入り所のお知らせの画面">
+<p class="cap">「準備してください」→「いきます」の順でお知らせが届きます</p>
 </div>
 
-<div class="sec">
-<h2><span>今週の結果</span></h2>
-<div class="hl">+<span class="cnt" data-to="101861">101,861</span>円<small>損切り 0回</small></div>
-<img class="shot" src="../img/result.jpg" alt="今週の配信の結果">
-<p class="fine">配信口座の今週の結果です。今後も同じ利益を約束するものではありません。</p>
-</div>
-
-<div class="mid"><a class="btn" href="https://t.me/+6vZnVeQlpvBiNWRh" rel="noopener">🎁 無料でツールを受け取る ▶</a></div>
+<div class="mid"><a class="btn" href="https://t.me/+6vZnVeQlpvBiNWRh" rel="noopener">勉強会をのぞいてみる ▶</a></div>
 
 <div class="sec">
-<h2><span>参加者の声</span></h2>
+<h2><span>参加している人の声</span></h2>
 <div class="voices">
-<div class="vc">自動利確されました✨</div>
-<div class="vc">今日もプラスで終えることができました。ありがとうございます</div>
+<div class="vc">今から参加しますので、今日もよろしくお願いします</div>
 <div class="vc">ナイスー！</div>
 <div class="vc">今日もありがとうございました😊</div>
 </div>
@@ -161,50 +108,27 @@ h2 span{display:inline-block;background:linear-gradient(180deg,#fff3a0,#ffc400 5
 </div>
 
 <div class="sec">
-<h2><span>ゴールドFXツールの過去の検証</span></h2>
-<p class="lead2">過去6か月のデータで検証<br><span>資金500万円・4月〜9月</span></p>
-<div class="nums">
-<div class="num big"><div class="k">6か月の合計</div><div class="v gold">+1,188万円</div></div>
-<div class="num"><div class="k">プラスの月</div><div class="v">6<small>/6か月</small></div></div>
-<div class="num"><div class="k">勝ち / 負け</div><div class="v">640<small>勝</small> 3<small>敗</small></div></div></div>
-<div class="box"><div class="bt">月ごとの利益</div><svg viewBox="0 0 400 300"><rect x="9.3" y="128.9" width="48.0" height="131.1" rx="5" fill="#d4a017"/><text x="33.3" y="118.9" fill="#111827" font-size="15" font-weight="800" text-anchor="middle">+166万</text><text x="33.3" y="288" fill="#374151" font-size="17" font-weight="700" text-anchor="middle">4月</text><rect x="76.0" y="128.8" width="48.0" height="131.2" rx="5" fill="#d4a017"/><text x="100.0" y="118.8" fill="#111827" font-size="15" font-weight="800" text-anchor="middle">+166万</text><text x="100.0" y="288" fill="#374151" font-size="17" font-weight="700" text-anchor="middle">5月</text><rect x="142.7" y="116.7" width="48.0" height="143.3" rx="5" fill="#d4a017"/><text x="166.7" y="106.7" fill="#111827" font-size="15" font-weight="800" text-anchor="middle">+181万</text><text x="166.7" y="288" fill="#374151" font-size="17" font-weight="700" text-anchor="middle">6月</text><rect x="209.3" y="111.8" width="48.0" height="148.2" rx="5" fill="#d4a017"/><text x="233.3" y="101.8" fill="#111827" font-size="15" font-weight="800" text-anchor="middle">+187万</text><text x="233.3" y="288" fill="#374151" font-size="17" font-weight="700" text-anchor="middle">7月</text><rect x="276.0" y="87.2" width="48.0" height="172.8" rx="5" fill="#d4a017"/><text x="300.0" y="77.2" fill="#111827" font-size="15" font-weight="800" text-anchor="middle">+218万</text><text x="300.0" y="288" fill="#374151" font-size="17" font-weight="700" text-anchor="middle">8月</text><rect x="342.7" y="46.0" width="48.0" height="214.0" rx="5" fill="#d4a017"/><text x="366.7" y="36.0" fill="#111827" font-size="15" font-weight="800" text-anchor="middle">+270万</text><text x="366.7" y="288" fill="#374151" font-size="17" font-weight="700" text-anchor="middle">9月</text></svg></div>
-<p class="fine">この6か月は損切りになっていませんが、損切りになると、決めておいた損切り額まで一度に減ることがあります。資金が少ない時は、ロットを資金に合わせて小さくします。<br>過去の検証の結果で、将来の利益を約束するものではありません。</p>
-</div>
-
-<div class="mid"><a class="btn" href="https://t.me/+6vZnVeQlpvBiNWRh" rel="noopener">🎁 無料でツールを受け取る ▶</a></div>
-
-<div class="sec">
-<h2><span>はじめ方はかんたん3ステップ</span></h2>
+<h2><span>はじめ方は3ステップ</span></h2>
 <div class="step"><div class="n">1</div><div><b>下のボタンを押す</b><p>勉強会のグループ（無料のチャットアプリ）が開きます</p></div></div>
-<div class="step"><div class="n">2</div><div><b>グループに参加する</b><p>その日からエントリーのお知らせが届きます</p></div></div>
-<div class="step"><div class="n">3</div><div><b>口座を用意してツールを受け取る</b><p>口座の作り方は勉強会で案内します</p></div></div>
+<div class="step"><div class="n">2</div><div><b>グループに参加する</b><p>その日から入り所のお知らせが届きます。まずは見るだけでOK</p></div></div>
+<div class="step"><div class="n">3</div><div><b>慣れてきたらツールも使う</b><p>使い方と必要な準備は勉強会で案内します</p></div></div>
 </div>
 
 <div class="sec">
 <h2><span>よくある質問</span></h2>
-<div class="qa"><b>本当に無料ですか？</b><p>勉強会への参加は無料です。退出もいつでも自由です。</p></div>
-<div class="qa"><b>初心者でも大丈夫？</b><p>大丈夫です。入り所はお知らせするので、まずは見るだけでもOKです。</p></div>
-<div class="qa"><b>ツールの受け取りに条件は？</b><p>勉強会で案内する口座の用意が必要です。</p></div>
-<div class="qa"><b>少ない資金でもできますか？</b><p>できます。資金に合わせて小さい量から始められます。</p></div>
+<div class="qa"><b>参加にお金はかかりますか？</b><p>勉強会への参加は無料です。退出もいつでも自由です。</p></div>
+<div class="qa"><b>初心者でも大丈夫？</b><p>大丈夫です。入り所と理由をお知らせするので、まずは見て覚えるところからで十分です。</p></div>
+<div class="qa"><b>ツールを使うのに条件は？</b><p>勉強会で案内する口座の用意が必要です。くわしくは参加後にご案内します。</p></div>
+<div class="qa"><b>必ずもうかりますか？</b><p>いいえ。FXは損をすることもあります。勉強会は、自分で判断できるようになるための場です。</p></div>
 </div>
 
 <div class="again">
-<div class="giftbox">🎁</div>
-<b>ゴールドFXのお助けツール<br>「SCHOLAR」を無料で受け取る</b>
-<a class="btn" href="https://t.me/+6vZnVeQlpvBiNWRh" rel="noopener">今すぐ参加する ▶</a>
-<div class="free">参加も退出も自由・お金はかかりません</div>
+<b>ゴールドの入り所を<br>毎日いっしょに学びませんか</b>
+<a class="btn" href="https://t.me/+6vZnVeQlpvBiNWRh" rel="noopener">勉強会をのぞいてみる ▶</a>
+<div class="free">参加は無料・退出はいつでも自由です</div>
 </div>
 
-<p class="foot">※ ツールの受け取りには、勉強会で案内する口座の用意が必要です。<br>※ バックテストは過去のデータを使った検証で、実際の口座の成績ではありません。過去の結果は将来の利益を約束するものではありません。FXは元本を失うことがあります。投資は余裕資金で、ご自身の判断でお願いします。</p>
+<p class="foot">※ ツールを使うには、勉強会で案内する口座の用意が必要です。<br>※ 勉強会でのお知らせは学習のための情報で、利益を約束するものではありません。FXは元本を失うことがあります。投資は余裕資金で、ご自身の判断でお願いします。</p>
 </div>
-<div class="sticky"><a class="btn" href="https://t.me/+6vZnVeQlpvBiNWRh" rel="noopener">🎁 無料でプレゼントを受け取る</a></div>
-<script>
-document.querySelectorAll('.sec,.again,.mid').forEach(e=>e.classList.add('pop'));
-const fmt=n=>n.toLocaleString('ja-JP');
-function count(el){const to=+el.dataset.to;let i=0;const N=40;const id=setInterval(()=>{i++;const k=i/N;el.textContent=fmt(Math.round(to*(1-Math.pow(1-k,3))));if(i>=N)clearInterval(id)},40)}
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('on');e.target.querySelectorAll('.cnt').forEach(count);io.unobserve(e.target)}),{threshold:.15});
-document.querySelectorAll('.pop').forEach(e=>io.observe(e));
-document.querySelectorAll('.hero .cnt').forEach(count);
-setTimeout(()=>document.querySelectorAll('.pop:not(.on)').forEach(e=>{if(e.getBoundingClientRect().top<innerHeight){e.classList.add('on');e.querySelectorAll('.cnt').forEach(count)}}),300);
-</script>
+<div class="sticky"><a class="btn" href="https://t.me/+6vZnVeQlpvBiNWRh" rel="noopener">勉強会をのぞいてみる ▶</a></div>
 </body></html>
