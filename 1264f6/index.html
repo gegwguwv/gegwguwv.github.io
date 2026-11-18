@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ゴールドFXの勉強会｜ローソク足と入り所を毎日いっしょに</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#fffaf0;color:#1f2937;line-height:1.8;padding-bottom:96px}
+.w{max-width:460px;margin:0 auto}
+.hero{background:linear-gradient(160deg,#fff3c4 0%,#ffe08a 55%,#f5c542 100%);padding:34px 22px 30px;text-align:center;border-radius:0 0 28px 28px}
+.ribbon{display:inline-block;background:#c0392b;color:#fff;font-weight:800;font-size:17px;padding:6px 18px;border-radius:999px;letter-spacing:.05em}
+.giftbox{font-size:96px;line-height:1.1;margin:14px 0 4px}
+.hero h1{font-size:27px;line-height:1.35;margin:4px 0 6px;font-weight:900}
+.hero h1 b{color:#b45309}
+.hero p{font-size:17px;margin:0 0 20px;color:#3f3f46}
+.btn{display:block;background:#16a34a;color:#fff;text-decoration:none;font-weight:800;font-size:20px;padding:18px 10px;border-radius:999px;text-align:center;box-shadow:0 6px 0 #0f7a36}
+.free{font-size:14px;color:#52525b;margin-top:10px}
+.sec{padding:30px 20px 4px}
+h2{font-size:25px;text-align:center;margin:0 0 18px;font-weight:900}
+h2 span{background:linear-gradient(transparent 62%,#ffe08a 62%)}
+.card{display:flex;gap:14px;align-items:center;background:#fff;border-radius:18px;padding:18px;margin:12px 0;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.card .i{font-size:40px}
+.card b{display:block;font-size:19px}
+.card p{margin:0;font-size:16px;color:#52525b}
+.lead2{text-align:center;font-size:18px;font-weight:800;margin:0 0 14px}.lead2 span{font-size:14px;font-weight:400;color:#6b7280}
+.nums{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.num{background:#fff;border-radius:16px;padding:14px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.num.big{grid-column:1/3}
+.num .k{font-size:15px;color:#6b7280}.num .v{font-size:30px;font-weight:900}.num.big .v{font-size:42px}
+.num small{font-size:15px;font-weight:700;color:#6b7280;margin-left:2px}
+.gold{color:#b45309}
+.box{background:#fff;border-radius:18px;padding:16px;margin:12px 0;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.bt{font-size:19px;font-weight:800;text-align:center;margin-bottom:6px}
+svg{width:100%;height:auto;display:block}
+.fine{font-size:12px;color:#71717a;line-height:1.7;margin:10px 2px}
+.again{margin:26px 20px 0;background:#fff;border:3px solid #f5c542;border-radius:22px;padding:22px;text-align:center}
+.again .giftbox{font-size:60px;margin:0}
+.again b{display:block;font-size:22px;margin:4px 0 14px}
+.foot{font-size:11px;color:#9ca3af;padding:22px 20px;line-height:1.7}
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,250,240,.96);box-shadow:0 -4px 14px rgba(0,0,0,.08)}
+.sticky .btn{max-width:460px;margin:0 auto;font-size:18px;padding:15px}
+.shot{display:block;width:100%;border-radius:16px;margin:10px 0;box-shadow:0 4px 14px rgba(0,0,0,.12)}
+.cap{text-align:center;font-size:16px;color:#3f3f46;margin:4px 0 0}
+.hl{text-align:center;font-size:40px;font-weight:900;color:#16a34a;line-height:1.2;margin:2px 0}.hl small{display:block;font-size:16px;color:#52525b;font-weight:700}
+.voices{display:flex;flex-direction:column;gap:10px;margin:6px 0 12px}
+.vc{background:#fff;border-radius:18px 18px 18px 4px;padding:12px 16px;font-size:18px;font-weight:700;box-shadow:0 2px 10px rgba(0,0,0,.06);max-width:88%}
+.vc:nth-child(even){align-self:flex-end;border-radius:18px 18px 4px 18px;background:#fff7d6}
+.pain{background:#fff;border-radius:16px;padding:14px 16px;margin:10px 0;font-size:18px;font-weight:700;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.pain:before{content:"😣 "}
+.arrow{text-align:center;font-size:30px;color:#b45309;margin:14px 0 0;font-weight:900}
+.mid{padding:22px 20px 0}
+.mid .btn{font-size:18px;padding:15px}
+.step{display:flex;gap:14px;align-items:center;background:#fff;border-radius:16px;padding:14px 16px;margin:10px 0;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.step .n{flex:none;width:40px;height:40px;border-radius:50%;background:#f5c542;font-weight:900;font-size:20px;display:flex;align-items:center;justify-content:center}
+.step b{display:block;font-size:18px}.step p{margin:0;font-size:15px;color:#52525b}
+.qa{background:#fff;border-radius:16px;padding:14px 16px;margin:10px 0;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.qa b{display:block;font-size:17px}.qa b:before{content:"Q. ";color:#b45309}
+.qa p{margin:4px 0 0;font-size:16px;color:#3f3f46}.qa p:before{content:"A. ";font-weight:800;color:#16a34a}
+.sub{text-align:center;font-size:16px;color:#52525b;margin:-8px 0 14px}
+.proof{background:#fff;border-radius:20px;margin:16px 0 14px;padding:14px 10px;box-shadow:0 4px 14px rgba(0,0,0,.1)}
+.pk{font-size:15px;font-weight:800;color:#52525b}.pv{font-size:56px;font-weight:900;color:#16a34a;line-height:1.1}.pv small{font-size:24px}
+.ps{font-size:14px;color:#3f3f46;font-weight:700}.ps span{color:#b45309}
+
+</style></head><body><div class="w">
+
+<div class="hero">
+<div class="ribbon">FX・ゴールド（金）の勉強会</div>
+<h1 style="margin-top:18px">ゴールドの<br><b>入り所の考え方</b>を<br>毎日いっしょに学ぶ</h1>
+<p>平日の日中、その日の入り所と<br>「なぜそこなのか」をチャットで共有。<br>見るだけの参加でも大丈夫です。</p>
+<a class="btn" href="https://t.me/+J_FKVPKh_BtiZTcx" rel="noopener">勉強会をのぞいてみる ▶</a>
+<div class="free">参加は無料・退出はいつでも自由です</div>
+</div>
+
+<div class="sec">
+<h2><span>こんな悩みはありませんか？</span></h2>
+<div class="pain">ゴールドをどこで買う・売るか分からない</div>
+<div class="pain">ローソク足の形を見ても、意味が分からない</div>
+<div class="pain">ひとりだと続かない</div>
+<div class="arrow">▼</div>
+</div>
+
+<div class="sec">
+<h2><span>勉強会でできること</span></h2>
+<div class="card"><div class="i">📈</div><div><b>その日の入り所を共有</b><p>平日13〜22時ごろ、「ここで買う・売る」と理由をお知らせ</p></div></div>
+<div class="card"><div class="i">🕯️</div><div><b>ローソク足の見方が身につく</b><p>実際のチャートで、形の意味と次の動きの読み方を確認</p></div></div>
+<div class="card"><div class="i">🛠️</div><div><b>お助けツール「SCHOLAR」</b><p>利確・損切りの位置をあらかじめ決めて、感情で迷わない練習に</p></div></div>
+<div class="card"><div class="i">👥</div><div><b>仲間と一緒だから続く</b><p>雑談部屋で、その日の振り返りを話せます</p></div></div>
+</div>
+
+<div class="sec">
+<h2><span>実際のお知らせ</span></h2>
+<p class="sub">勉強会のチャットの画面です</p>
+<img class="shot" src="../img/entry.jpg" alt="入り所のお知らせの画面">
+<p class="cap">「準備してください」→「いきます」の順でお知らせが届きます</p>
+</div>
+
+<div class="mid"><a class="btn" href="https://t.me/+J_FKVPKh_BtiZTcx" rel="noopener">勉強会をのぞいてみる ▶</a></div>
+
+<div class="sec">
+<h2><span>参加している人の声</span></h2>
+<div class="voices">
+<div class="vc">今から参加しますので、今日もよろしくお願いします</div>
+<div class="vc">ナイスー！</div>
+<div class="vc">今日もありがとうございました😊</div>
+</div>
+<img class="shot" src="../img/voice.jpg" alt="勉強会の雑談部屋の様子">
+<p class="cap">勉強会の雑談部屋より（お名前は隠しています）</p>
+</div>
+
+<div class="sec">
+<h2><span>はじめ方は3ステップ</span></h2>
+<div class="step"><div class="n">1</div><div><b>下のボタンを押す</b><p>勉強会のグループ（無料のチャットアプリ）が開きます</p></div></div>
+<div class="step"><div class="n">2</div><div><b>グループに参加する</b><p>その日から入り所のお知らせが届きます。まずは見るだけでOK</p></div></div>
+<div class="step"><div class="n">3</div><div><b>慣れてきたらツールも使う</b><p>使い方と必要な準備は勉強会で案内します</p></div></div>
+</div>
+
+<div class="sec">
+<h2><span>よくある質問</span></h2>
+<div class="qa"><b>参加にお金はかかりますか？</b><p>勉強会への参加は無料です。退出もいつでも自由です。</p></div>
+<div class="qa"><b>初心者でも大丈夫？</b><p>大丈夫です。入り所と理由をお知らせするので、まずは見て覚えるところからで十分です。</p></div>
+<div class="qa"><b>ツールを使うのに条件は？</b><p>勉強会で案内する口座の用意が必要です。くわしくは参加後にご案内します。</p></div>
+<div class="qa"><b>必ずもうかりますか？</b><p>いいえ。FXは損をすることもあります。勉強会は、自分で判断できるようになるための場です。</p></div>
+</div>
+
+<div class="again">
+<b>ゴールドの入り所を<br>毎日いっしょに学びませんか</b>
+<a class="btn" href="https://t.me/+J_FKVPKh_BtiZTcx" rel="noopener">勉強会をのぞいてみる ▶</a>
+<div class="free">参加は無料・退出はいつでも自由です</div>
+</div>
+
+<p class="foot">※ ツールを使うには、勉強会で案内する口座の用意が必要です。<br>※ 勉強会でのお知らせは学習のための情報で、利益を約束するものではありません。FXは元本を失うことがあります。投資は余裕資金で、ご自身の判断でお願いします。</p>
+</div>
+<div class="sticky"><a class="btn" href="https://t.me/+J_FKVPKh_BtiZTcx" rel="noopener">勉強会をのぞいてみる ▶</a></div>
+</body></html>
